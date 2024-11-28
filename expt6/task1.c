@@ -1,5 +1,3 @@
-//defining a counter function to print how many times the function is called.
-use storage classes
 #include<stdio.h>
 extern int countExtern;
 void counterFunctionStatic() {

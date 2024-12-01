@@ -1,3 +1,12 @@
+/*
+    Expt. No : 4
+    Title : WAP to find all the prime numbers between two numbers using functions.
+
+    Name:Shaikh Kamran Qamaralam
+    Class & Div: ECS-E
+    UIN: 241S035
+ */
+
 //find all the prime numbers between two numbers using functions
 #include <stdio.h>
 int isPrime(int num){
@@ -32,3 +41,10 @@ scanf("%d", &end);
 findPrimes(start, end);
 return 0;
 }
+/*
+OUTPUT
+Enter the starting number: 2
+Enter the ending number: 13
+Prime numbers between 2 and 13 are:
+2 3 5 7 11 13
+*/

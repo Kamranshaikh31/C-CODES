@@ -10,7 +10,7 @@
  #include <stdio.h>
 
 int main() {
-    //printing details
+    //printing details using function printf and using escape sequence  to organise the output in decent format 
     printf("Full Name\t: Shaikh Kamran Qamaralam\n");
     printf("Age\t\t: 19\n");
     printf("Class\t\t: FE-ECs\n");

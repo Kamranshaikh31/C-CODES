@@ -11,34 +11,36 @@
 #include <stdio.h>
 int isPrime(int num){
 if (num < 2){
-return 0;
+return 0;// Not prime
 }
 for (int i = 2; i * i <= num; i++){
 if (num % i == 0)
-{
+{// Found a divisor
 return 0;
 }
 }
-return 1;
+return 1; // Prime number
 }
 void findPrimes(int start, int end){
-printf("Prime numbers between %d and %d are:\n", start, end);
+    printf("Prime numbers between %d and %d are:\n", start, end);
 for (int i = start; i <= end; i++)
 {
 if (isPrime(i))
 {
-printf("%d ", i);
+    printf("%d ", i);
 }
 }
-printf("\n");
+    printf("\n");
 }
 int main(){
-int start, end;
-printf("Enter the starting number: ");
-scanf("%d", &start);
-printf("Enter the ending number: ");
-scanf("%d", &end);
-findPrimes(start, end);
+    int start, end;
+    // take user input
+    printf("Enter the starting number: ");
+    scanf("%d", &start);
+    printf("Enter the ending number: ");
+    scanf("%d", &end);
+     // displaying  prime numbers
+    findPrimes(start, end);
 return 0;
 }
 /*

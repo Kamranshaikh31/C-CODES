@@ -1,14 +1,24 @@
+/*
+    Expt. No : 2 (task 2)
+    Title : WAP to find the sum of all the odd numbers between numbers entered by the
+            user.
+
+    Name: Shaikh Kamran Qamralam
+    Class & Div: ECS-E
+    UIN: 241S012
+ */
+// finding sum of odd numbers from  starting number to ending number 
 #include <stdio.h>
 
 int main() {
     int start_num, end_num, sum = 0, i;
 
-    printf("\t\t * Sum of Odd Numbers *\n\n");
+    printf("\t\t *** Sum of Odd Numbers ***\n\n");
     printf("Enter Starting Number: ");
     scanf("%d", &start_num);
     printf("Enter Ending Number: ");
     scanf("%d", &end_num);
-
+//giving instruction for proper output 
     if (start_num > end_num) {
         printf("Error: Ending Number should be higher than Starting Number.\n");
         return 1;
@@ -22,3 +32,12 @@ int main() {
     printf("Sum of odd numbers from %d to %d is: %d\n", start_num, end_num, sum);
     return 0;
 }
+/* OUTPUT
+
+      *** Sum of Odd Numbers ***
+
+Enter Starting Number: 1
+Enter Ending Number: 10
+Sum of odd numbers from 1 to 10 is: 25
+
+*/
